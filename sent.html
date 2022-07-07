@@ -81,43 +81,24 @@
 </nav>
 <main class="responsive">
 <body class="container">
-    <h1 style="font-size: 48px;" class="bold"><B>掲示板(V3.1)</B></h1>
+    <div class="page left active">
+    <article class="no-padding border round">
+        <div class="padding">
+          <h5 class="no-margin">送信が完了しました</h5>
+        </div>
+    </article>
+    </div>
     <br>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdIeZD7U9ep7UkwxkRNAJyZwHbHqezZZiohJeymd2dLZVZCIw/formResponse"
-        method="POST"
-        target="hidden_iframe"
-        onsubmit="submitted=true;"
-        class="c-form">
-        <h2 for="1996159697" style="font-size: 24px;">名前</h2>
-        <div class="field label border round medium">
-            <input maxlength="25" id="1901562601" type="text" name="entry.1901562601">
-            <span class="helper">25文字以内まで入力可能</span>
-        </div>
-        <br>
-        <h2 for="954330460" style="font-size: 24px;">内容</h2>
-        <div class="field textarea border round">
-            <textarea id="861124243" name="entry.861124243" required></textarea>
-            <span class="helper red-text">入力必須</span>
-        </div>
-        <br>
-    <input type="hidden" name="fvv" value="1">
-    <input type="hidden" name="fbzx" value="-548211791860725426">
-    <input type="hidden" name="pageHistory" value="0">
-    <script type="text/javascript">
-        let submitted = false;
-    </script>
-    <iframe
-        name="hidden_iframe"
-        id="hidden_iframe"
-        style="display: none"
-        onload="if(submitted){window.location='sent.html';}"
-    ></iframe>
-    <center>
-    <button class="flat round" type="submit" value="Submit">
-        <i>send</i>
-        <span>送信</span>
+    <br>
+    <button location.href='edit' class="extend flat square round extra">
+        <i>preview</i>
+        <span>閲覧</span>
     </button>
-    </center>
-    </form>
+    <br>
+    <br>
+    <button location.href='./' class="extend flat square round extra">
+        <i>edit</i>
+        <span>投稿</span>
+    </button>
 </body>
 </html>
